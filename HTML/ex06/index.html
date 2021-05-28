@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+     <h1> Imagens dinamincas </h1>
+     <p> Tenta abrir em varios dispositivos diferentes</p>
+     <!-- Tag Picture consigo dimensionar as imagens de acordo com a a tela, responsividade.-->
+     <picture>
+         <source media="(max-width: 750px )" srcset="foto3.png" type="image/png">
+         <source media="(max-width: 1050px )" srcset="foto2.png" type="image/png">
+         <img src="foto1.png" alt="imagem">
+     </picture>
+
+     <h1>Reproduzindo o Audio em html5</h1>
+
+     <audio src="media/Road Tripzzz - Ofshane.mp3" controls autoplay loop></audio>
+     <!-- MP3 WAV OGG-->
+     <br>
+     <audio preload="metadata" controls autoplay>
+         <source src="media/Road Tripzzz - Ofshane.mp3" type="audio/mpeg">
+     </audio>
+     <br>
+
+     <h1>Reproduzindo Video em html5 ospedado no proprio site</h1>
+
+     <video src="vidio/vidio1.mp4" width="500px" poster="#" controls>
+     </video>
+     <br>
+     <!-- Sempre que for adicionar um video em um site, uzar o youtube para melhor alçance de busca -->
+     <h1>Reproduzindo Video em html5 com hospedagem externe</h1>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/xwG-O0siuWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
